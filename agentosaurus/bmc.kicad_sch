@@ -1,0 +1,721 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid b2000001-0001-4000-8000-000000000001)
+
+  (paper "A3")
+
+  (title_block
+    (title "Agentosaurus — BMC")
+    (date "2026-02-26")
+    (rev "0.1.0")
+    (company "Agentosaurus")
+    (comment 1 "CERN-OHL-P v2")
+    (comment 2 "ESP32-S3 Baseboard Management Controller")
+  )
+
+  (lib_symbols
+    ;; ESP32-S3-WROOM-1
+    (symbol "agentosaurus:ESP32-S3-WROOM-1" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "U" (at 0 1.27 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "ESP32-S3-WROOM-1" (at 0 -1.27 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "agentosaurus-footprints:ESP32-S3-WROOM-1" (at 0 -3.81 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Datasheet" "" (at 0 -6.35 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "ESP32-S3-WROOM-1_0_1"
+        (rectangle (start -15.24 53.34) (end 15.24 -53.34) (stroke (width 0.254) (type default)) (fill (type background)))
+      )
+      (symbol "ESP32-S3-WROOM-1_1_1"
+        (pin power_in line (at 0 -55.88 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+        (pin power_in line (at 0 55.88 270) (length 2.54) (name "3V3" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+        (pin input line (at -17.78 48.26 0) (length 2.54) (name "EN" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at -17.78 43.18 0) (length 2.54) (name "IO4" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at -17.78 40.64 0) (length 2.54) (name "IO5" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at -17.78 38.1 0) (length 2.54) (name "IO6" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at -17.78 35.56 0) (length 2.54) (name "IO7" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at -17.78 30.48 0) (length 2.54) (name "IO15" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at -17.78 27.94 0) (length 2.54) (name "IO16" (effects (font (size 1.27 1.27)))) (number "9" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at -17.78 25.4 0) (length 2.54) (name "IO17" (effects (font (size 1.27 1.27)))) (number "10" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at -17.78 22.86 0) (length 2.54) (name "IO18" (effects (font (size 1.27 1.27)))) (number "11" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at -17.78 17.78 0) (length 2.54) (name "IO8" (effects (font (size 1.27 1.27)))) (number "12" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at 17.78 48.26 180) (length 2.54) (name "IO19/USB_D-" (effects (font (size 1.27 1.27)))) (number "13" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at 17.78 45.72 180) (length 2.54) (name "IO20/USB_D+" (effects (font (size 1.27 1.27)))) (number "14" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at -17.78 12.7 0) (length 2.54) (name "IO3" (effects (font (size 1.27 1.27)))) (number "15" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at -17.78 10.16 0) (length 2.54) (name "IO46" (effects (font (size 1.27 1.27)))) (number "16" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at -17.78 7.62 0) (length 2.54) (name "IO9" (effects (font (size 1.27 1.27)))) (number "17" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at -17.78 5.08 0) (length 2.54) (name "IO10" (effects (font (size 1.27 1.27)))) (number "18" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at -17.78 2.54 0) (length 2.54) (name "IO11" (effects (font (size 1.27 1.27)))) (number "19" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at -17.78 0 0) (length 2.54) (name "IO12" (effects (font (size 1.27 1.27)))) (number "20" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at -17.78 -2.54 0) (length 2.54) (name "IO13" (effects (font (size 1.27 1.27)))) (number "21" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at -17.78 -5.08 0) (length 2.54) (name "IO14" (effects (font (size 1.27 1.27)))) (number "22" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at 17.78 40.64 180) (length 2.54) (name "IO21" (effects (font (size 1.27 1.27)))) (number "23" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at 17.78 35.56 180) (length 2.54) (name "IO47" (effects (font (size 1.27 1.27)))) (number "24" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at 17.78 33.02 180) (length 2.54) (name "IO48" (effects (font (size 1.27 1.27)))) (number "25" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at 17.78 27.94 180) (length 2.54) (name "IO45" (effects (font (size 1.27 1.27)))) (number "26" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at 17.78 22.86 180) (length 2.54) (name "IO0" (effects (font (size 1.27 1.27)))) (number "27" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at 17.78 17.78 180) (length 2.54) (name "IO35" (effects (font (size 1.27 1.27)))) (number "28" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at 17.78 15.24 180) (length 2.54) (name "IO36" (effects (font (size 1.27 1.27)))) (number "29" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at 17.78 12.7 180) (length 2.54) (name "IO37" (effects (font (size 1.27 1.27)))) (number "30" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at 17.78 10.16 180) (length 2.54) (name "IO38" (effects (font (size 1.27 1.27)))) (number "31" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at 17.78 7.62 180) (length 2.54) (name "IO39" (effects (font (size 1.27 1.27)))) (number "32" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at 17.78 5.08 180) (length 2.54) (name "IO40" (effects (font (size 1.27 1.27)))) (number "33" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at 17.78 2.54 180) (length 2.54) (name "IO41" (effects (font (size 1.27 1.27)))) (number "34" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at 17.78 0 180) (length 2.54) (name "IO42" (effects (font (size 1.27 1.27)))) (number "35" (effects (font (size 1.27 1.27)))))
+        (pin output line (at 17.78 -5.08 180) (length 2.54) (name "TXD0" (effects (font (size 1.27 1.27)))) (number "36" (effects (font (size 1.27 1.27)))))
+        (pin input line (at 17.78 -7.62 180) (length 2.54) (name "RXD0" (effects (font (size 1.27 1.27)))) (number "37" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at 17.78 -12.7 180) (length 2.54) (name "IO2" (effects (font (size 1.27 1.27)))) (number "38" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at 17.78 -15.24 180) (length 2.54) (name "IO1" (effects (font (size 1.27 1.27)))) (number "39" (effects (font (size 1.27 1.27)))))
+        (pin power_in line (at 2.54 -55.88 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "40" (effects (font (size 1.27 1.27)))))
+        (pin power_in line (at 5.08 -55.88 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "41" (effects (font (size 1.27 1.27)))))
+      )
+    )
+
+    ;; USB-C Receptacle USB2
+    (symbol "agentosaurus:USB_C_Receptacle_USB2" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "J" (at 0 1.27 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "USB_C_Receptacle_USB2" (at 0 -1.27 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal" (at 0 -3.81 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Datasheet" "" (at 0 -6.35 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "USB_C_Receptacle_USB2_0_1"
+        (rectangle (start -10.16 12.7) (end 10.16 -12.7) (stroke (width 0.254) (type default)) (fill (type background)))
+      )
+      (symbol "USB_C_Receptacle_USB2_1_1"
+        (pin power_in line (at 0 -15.24 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "A1" (effects (font (size 1.27 1.27)))))
+        (pin power_in line (at 2.54 -15.24 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "A12" (effects (font (size 1.27 1.27)))))
+        (pin power_in line (at -2.54 -15.24 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "B1" (effects (font (size 1.27 1.27)))))
+        (pin power_in line (at -5.08 -15.24 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "B12" (effects (font (size 1.27 1.27)))))
+        (pin power_in line (at 0 15.24 270) (length 2.54) (name "VBUS" (effects (font (size 1.27 1.27)))) (number "A4" (effects (font (size 1.27 1.27)))))
+        (pin power_in line (at 2.54 15.24 270) (length 2.54) (name "VBUS" (effects (font (size 1.27 1.27)))) (number "B9" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at -12.7 5.08 0) (length 2.54) (name "CC1" (effects (font (size 1.27 1.27)))) (number "A5" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at -12.7 2.54 0) (length 2.54) (name "CC2" (effects (font (size 1.27 1.27)))) (number "B5" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at 12.7 5.08 180) (length 2.54) (name "D+" (effects (font (size 1.27 1.27)))) (number "A6" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at 12.7 2.54 180) (length 2.54) (name "D-" (effects (font (size 1.27 1.27)))) (number "A7" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at 12.7 0 180) (length 2.54) (name "D+" (effects (font (size 1.27 1.27)))) (number "B6" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at 12.7 -2.54 180) (length 2.54) (name "D-" (effects (font (size 1.27 1.27)))) (number "B7" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at -12.7 -5.08 0) (length 2.54) (name "SHIELD" (effects (font (size 1.27 1.27)))) (number "SH" (effects (font (size 1.27 1.27)))))
+      )
+    )
+
+    ;; USBLC6-2SC6 ESD Protection
+    (symbol "agentosaurus:USBLC6-2SC6" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "U" (at 0 1.27 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "USBLC6-2SC6" (at 0 -1.27 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "Package_TO_SOT_SMD:SOT-23-6" (at 0 -3.81 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Datasheet" "" (at 0 -6.35 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "USBLC6-2SC6_0_1"
+        (rectangle (start -7.62 7.62) (end 7.62 -7.62) (stroke (width 0.254) (type default)) (fill (type background)))
+      )
+      (symbol "USBLC6-2SC6_1_1"
+        (pin bidirectional line (at -10.16 5.08 0) (length 2.54) (name "I/O1_1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+        (pin power_in line (at 0 -10.16 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at -10.16 0 0) (length 2.54) (name "I/O2_1" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at 10.16 0 180) (length 2.54) (name "I/O2_2" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+        (pin power_in line (at 0 10.16 270) (length 2.54) (name "VBUS" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at 10.16 5.08 180) (length 2.54) (name "I/O1_2" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27)))))
+      )
+    )
+
+    ;; SN74LV4052ADR UART Mux
+    (symbol "agentosaurus:SN74LV4052ADR" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "U" (at 0 1.27 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "SN74LV4052ADR" (at 0 -1.27 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" (at 0 -3.81 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Datasheet" "" (at 0 -6.35 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "SN74LV4052ADR_0_1"
+        (rectangle (start -10.16 22.86) (end 10.16 -22.86) (stroke (width 0.254) (type default)) (fill (type background)))
+      )
+      (symbol "SN74LV4052ADR_1_1"
+        (pin passive line (at -12.7 20.32 0) (length 2.54) (name "1Y0" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at -12.7 17.78 0) (length 2.54) (name "1Y1" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at -12.7 15.24 0) (length 2.54) (name "1Y2" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at -12.7 12.7 0) (length 2.54) (name "1Y3" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at 12.7 20.32 180) (length 2.54) (name "1Z" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+        (pin input line (at -12.7 -10.16 0) (length 2.54) (name "~{INH}" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27)))))
+        (pin power_in line (at -12.7 -17.78 0) (length 2.54) (name "VEE" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27)))))
+        (pin power_in line (at 0 -25.4 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at 12.7 5.08 180) (length 2.54) (name "2Z" (effects (font (size 1.27 1.27)))) (number "9" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at -12.7 -2.54 0) (length 2.54) (name "2Y3" (effects (font (size 1.27 1.27)))) (number "10" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at -12.7 0 0) (length 2.54) (name "2Y2" (effects (font (size 1.27 1.27)))) (number "11" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at -12.7 2.54 0) (length 2.54) (name "2Y1" (effects (font (size 1.27 1.27)))) (number "12" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at -12.7 5.08 0) (length 2.54) (name "2Y0" (effects (font (size 1.27 1.27)))) (number "13" (effects (font (size 1.27 1.27)))))
+        (pin input line (at -12.7 -15.24 0) (length 2.54) (name "S1" (effects (font (size 1.27 1.27)))) (number "14" (effects (font (size 1.27 1.27)))))
+        (pin input line (at -12.7 -12.7 0) (length 2.54) (name "S0" (effects (font (size 1.27 1.27)))) (number "15" (effects (font (size 1.27 1.27)))))
+        (pin power_in line (at 0 25.4 270) (length 2.54) (name "VCC" (effects (font (size 1.27 1.27)))) (number "16" (effects (font (size 1.27 1.27)))))
+      )
+    )
+
+    ;; TPS22918DBVR Load Switch
+    (symbol "agentosaurus:TPS22918DBVR" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "U" (at 0 1.27 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "TPS22918DBVR" (at 0 -1.27 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (at 0 -3.81 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Datasheet" "" (at 0 -6.35 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "TPS22918DBVR_0_1"
+        (rectangle (start -7.62 7.62) (end 7.62 -7.62) (stroke (width 0.254) (type default)) (fill (type background)))
+      )
+      (symbol "TPS22918DBVR_1_1"
+        (pin power_in line (at -10.16 5.08 0) (length 2.54) (name "VIN" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+        (pin power_in line (at 0 -10.16 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+        (pin input line (at -10.16 0 0) (length 2.54) (name "EN" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at -10.16 -5.08 0) (length 2.54) (name "CT" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+        (pin power_out line (at 10.16 5.08 180) (length 2.54) (name "VOUT" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+      )
+    )
+
+    ;; WS2812B LED
+    (symbol "agentosaurus:WS2812B" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "D" (at 0 1.27 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "WS2812B" (at 0 -1.27 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" (at 0 -3.81 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Datasheet" "" (at 0 -6.35 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "WS2812B_0_1"
+        (rectangle (start -5.08 5.08) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type background)))
+      )
+      (symbol "WS2812B_1_1"
+        (pin power_in line (at 0 7.62 270) (length 2.54) (name "VDD" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+        (pin output line (at 7.62 0 180) (length 2.54) (name "DOUT" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+        (pin power_in line (at 0 -7.62 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+        (pin input line (at -7.62 0 0) (length 2.54) (name "DIN" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+      )
+    )
+
+    ;; TS3USB221RSER USB Mux
+    (symbol "agentosaurus:TS3USB221RSER" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "U" (at 0 1.27 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "TS3USB221RSER" (at 0 -1.27 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "Package_DFN_QFN:QFN-10-1EP_1.8x1.4mm_P0.5mm_EP0.5x1mm" (at 0 -3.81 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Datasheet" "" (at 0 -6.35 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "TS3USB221RSER_0_1"
+        (rectangle (start -10.16 12.7) (end 10.16 -12.7) (stroke (width 0.254) (type default)) (fill (type background)))
+      )
+      (symbol "TS3USB221RSER_1_1"
+        (pin bidirectional line (at -12.7 10.16 0) (length 2.54) (name "D_P" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at -12.7 7.62 0) (length 2.54) (name "D_N" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+        (pin power_in line (at 0 -15.24 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+        (pin input line (at -12.7 0 0) (length 2.54) (name "S" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+        (pin input line (at -12.7 -2.54 0) (length 2.54) (name "~{OE}" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+        (pin power_in line (at 0 15.24 270) (length 2.54) (name "VCC" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at 12.7 -5.08 180) (length 2.54) (name "D2_N" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at 12.7 -2.54 180) (length 2.54) (name "D2_P" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at 12.7 5.08 180) (length 2.54) (name "D1_N" (effects (font (size 1.27 1.27)))) (number "9" (effects (font (size 1.27 1.27)))))
+        (pin bidirectional line (at 12.7 7.62 180) (length 2.54) (name "D1_P" (effects (font (size 1.27 1.27)))) (number "10" (effects (font (size 1.27 1.27)))))
+      )
+    )
+
+    ;; GND power symbol
+    (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 -6.35 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Value" "GND" (at 0 -3.81 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "GND_0_1"
+        (polyline (pts (xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)) (stroke (width 0) (type default)) (fill (type none)))
+      )
+      (symbol "GND_1_1"
+        (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+      )
+    )
+  )
+
+  ;; ===============================================================
+  ;; ESP32-S3-WROOM-1 Module — U1
+  ;; ===============================================================
+
+  (symbol (lib_id "agentosaurus:ESP32-S3-WROOM-1") (at 109.22 101.6 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid b2000010-0001-4000-8000-000000000001)
+    (property "Reference" "U1" (at 109.22 45.72 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "ESP32-S3-WROOM-1" (at 109.22 48.26 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "agentosaurus-footprints:ESP32-S3-WROOM-1" (at 109.22 105.41 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 109.22 107.95 0) (effects (font (size 1.27 1.27)) hide))
+    (instances
+      (project "agentosaurus"
+        (path "/b2000001-0001-4000-8000-000000000001" (reference "U1") (unit 1))
+      )
+    )
+  )
+
+  ;; GND for ESP32-S3
+  (symbol (lib_id "power:GND") (at 109.22 160.02 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid b2000020-0001-4000-8000-000000000001)
+    (property "Reference" "#PWR021" (at 109.22 166.37 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 109.22 163.83 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 109.22 160.02 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 109.22 160.02 0) (effects (font (size 1.27 1.27)) hide))
+    (instances (project "agentosaurus" (path "/b2000001-0001-4000-8000-000000000001" (reference "#PWR021") (unit 1))))
+  )
+
+  ;; Wire ESP32 GND
+  (wire (pts (xy 109.22 157.48) (xy 109.22 160.02))
+    (stroke (width 0) (type default))
+    (uuid b2000040-0001-4000-8000-000000000001)
+  )
+
+  ;; ===============================================================
+  ;; USB-C Connector — J1
+  ;; ===============================================================
+
+  (symbol (lib_id "agentosaurus:USB_C_Receptacle_USB2") (at 50.8 66.04 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid b2000010-0002-4000-8000-000000000001)
+    (property "Reference" "J1" (at 50.8 50.8 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "USB-C" (at 50.8 53.34 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal" (at 50.8 69.85 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 50.8 72.39 0) (effects (font (size 1.27 1.27)) hide))
+    (instances
+      (project "agentosaurus"
+        (path "/b2000001-0001-4000-8000-000000000001" (reference "J1") (unit 1))
+      )
+    )
+  )
+
+  ;; GND for USB-C
+  (symbol (lib_id "power:GND") (at 50.8 83.82 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid b2000020-0002-4000-8000-000000000001)
+    (property "Reference" "#PWR022" (at 50.8 90.17 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 50.8 87.63 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 50.8 83.82 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 50.8 83.82 0) (effects (font (size 1.27 1.27)) hide))
+    (instances (project "agentosaurus" (path "/b2000001-0001-4000-8000-000000000001" (reference "#PWR022") (unit 1))))
+  )
+
+  ;; Wire USB-C GND
+  (wire (pts (xy 50.8 81.28) (xy 50.8 83.82))
+    (stroke (width 0) (type default))
+    (uuid b2000040-0002-4000-8000-000000000001)
+  )
+
+  ;; ===============================================================
+  ;; USBLC6-2SC6 ESD Protection — U2
+  ;; ===============================================================
+
+  (symbol (lib_id "agentosaurus:USBLC6-2SC6") (at 50.8 101.6 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid b2000010-0003-4000-8000-000000000001)
+    (property "Reference" "U2" (at 50.8 91.44 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "USBLC6-2SC6" (at 50.8 93.98 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-6" (at 50.8 105.41 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 50.8 107.95 0) (effects (font (size 1.27 1.27)) hide))
+    (instances
+      (project "agentosaurus"
+        (path "/b2000001-0001-4000-8000-000000000001" (reference "U2") (unit 1))
+      )
+    )
+  )
+
+  ;; ===============================================================
+  ;; SN74LV4052ADR UART Mux — U3
+  ;; ===============================================================
+
+  (symbol (lib_id "agentosaurus:SN74LV4052ADR") (at 231.14 83.82 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid b2000010-0004-4000-8000-000000000001)
+    (property "Reference" "U3" (at 231.14 58.42 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "SN74LV4052ADR" (at 231.14 60.96 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" (at 231.14 87.63 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 231.14 90.17 0) (effects (font (size 1.27 1.27)) hide))
+    (instances
+      (project "agentosaurus"
+        (path "/b2000001-0001-4000-8000-000000000001" (reference "U3") (unit 1))
+      )
+    )
+  )
+
+  ;; GND for UART mux
+  (symbol (lib_id "power:GND") (at 231.14 111.76 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid b2000020-0003-4000-8000-000000000001)
+    (property "Reference" "#PWR023" (at 231.14 118.11 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 231.14 115.57 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 231.14 111.76 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 231.14 111.76 0) (effects (font (size 1.27 1.27)) hide))
+    (instances (project "agentosaurus" (path "/b2000001-0001-4000-8000-000000000001" (reference "#PWR023") (unit 1))))
+  )
+
+  ;; Wire UART mux GND
+  (wire (pts (xy 231.14 109.22) (xy 231.14 111.76))
+    (stroke (width 0) (type default))
+    (uuid b2000040-0003-4000-8000-000000000001)
+  )
+
+  ;; ===============================================================
+  ;; TPS22918 Load Switches — U6, U7, U8, U9 (one per slot)
+  ;; ===============================================================
+
+  ;; Slot 1 load switch U6
+  (symbol (lib_id "agentosaurus:TPS22918DBVR") (at 231.14 149.86 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid b2000010-0006-4000-8000-000000000001)
+    (property "Reference" "U6" (at 231.14 139.7 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "TPS22918 Slot1" (at 231.14 142.24 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (at 231.14 153.67 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 231.14 156.21 0) (effects (font (size 1.27 1.27)) hide))
+    (instances
+      (project "agentosaurus"
+        (path "/b2000001-0001-4000-8000-000000000001" (reference "U6") (unit 1))
+      )
+    )
+  )
+
+  ;; Slot 2 load switch U7
+  (symbol (lib_id "agentosaurus:TPS22918DBVR") (at 271.78 149.86 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid b2000010-0007-4000-8000-000000000001)
+    (property "Reference" "U7" (at 271.78 139.7 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "TPS22918 Slot2" (at 271.78 142.24 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (at 271.78 153.67 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 271.78 156.21 0) (effects (font (size 1.27 1.27)) hide))
+    (instances
+      (project "agentosaurus"
+        (path "/b2000001-0001-4000-8000-000000000001" (reference "U7") (unit 1))
+      )
+    )
+  )
+
+  ;; Slot 3 load switch U8
+  (symbol (lib_id "agentosaurus:TPS22918DBVR") (at 312.42 149.86 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid b2000010-0008-4000-8000-000000000001)
+    (property "Reference" "U8" (at 312.42 139.7 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "TPS22918 Slot3" (at 312.42 142.24 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (at 312.42 153.67 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 312.42 156.21 0) (effects (font (size 1.27 1.27)) hide))
+    (instances
+      (project "agentosaurus"
+        (path "/b2000001-0001-4000-8000-000000000001" (reference "U8") (unit 1))
+      )
+    )
+  )
+
+  ;; Slot 4 load switch U9
+  (symbol (lib_id "agentosaurus:TPS22918DBVR") (at 353.06 149.86 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid b2000010-0009-4000-8000-000000000001)
+    (property "Reference" "U9" (at 353.06 139.7 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "TPS22918 Slot4" (at 353.06 142.24 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (at 353.06 153.67 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 353.06 156.21 0) (effects (font (size 1.27 1.27)) hide))
+    (instances
+      (project "agentosaurus"
+        (path "/b2000001-0001-4000-8000-000000000001" (reference "U9") (unit 1))
+      )
+    )
+  )
+
+  ;; ===============================================================
+  ;; WS2812B Status LEDs — D1-D4
+  ;; ===============================================================
+
+  ;; LED1 (Slot 1)
+  (symbol (lib_id "agentosaurus:WS2812B") (at 231.14 195.58 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid b2000010-0010-4000-8000-000000000001)
+    (property "Reference" "D1" (at 231.14 187.96 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "WS2812B" (at 231.14 190.5 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" (at 231.14 199.39 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 231.14 201.93 0) (effects (font (size 1.27 1.27)) hide))
+    (instances
+      (project "agentosaurus"
+        (path "/b2000001-0001-4000-8000-000000000001" (reference "D1") (unit 1))
+      )
+    )
+  )
+
+  ;; LED2 (Slot 2)
+  (symbol (lib_id "agentosaurus:WS2812B") (at 261.62 195.58 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid b2000010-0011-4000-8000-000000000001)
+    (property "Reference" "D2" (at 261.62 187.96 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "WS2812B" (at 261.62 190.5 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" (at 261.62 199.39 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 261.62 201.93 0) (effects (font (size 1.27 1.27)) hide))
+    (instances
+      (project "agentosaurus"
+        (path "/b2000001-0001-4000-8000-000000000001" (reference "D2") (unit 1))
+      )
+    )
+  )
+
+  ;; LED3 (Slot 3)
+  (symbol (lib_id "agentosaurus:WS2812B") (at 292.1 195.58 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid b2000010-0012-4000-8000-000000000001)
+    (property "Reference" "D3" (at 292.1 187.96 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "WS2812B" (at 292.1 190.5 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" (at 292.1 199.39 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 292.1 201.93 0) (effects (font (size 1.27 1.27)) hide))
+    (instances
+      (project "agentosaurus"
+        (path "/b2000001-0001-4000-8000-000000000001" (reference "D3") (unit 1))
+      )
+    )
+  )
+
+  ;; LED4 (Slot 4)
+  (symbol (lib_id "agentosaurus:WS2812B") (at 322.58 195.58 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid b2000010-0013-4000-8000-000000000001)
+    (property "Reference" "D4" (at 322.58 187.96 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "WS2812B" (at 322.58 190.5 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" (at 322.58 199.39 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 322.58 201.93 0) (effects (font (size 1.27 1.27)) hide))
+    (instances
+      (project "agentosaurus"
+        (path "/b2000001-0001-4000-8000-000000000001" (reference "D4") (unit 1))
+      )
+    )
+  )
+
+  ;; Cascaded WS2812B data chain wires (DOUT -> DIN)
+  (wire (pts (xy 238.76 195.58) (xy 254 195.58))
+    (stroke (width 0) (type default))
+    (uuid b2000040-0010-4000-8000-000000000001)
+  )
+  (wire (pts (xy 269.24 195.58) (xy 284.48 195.58))
+    (stroke (width 0) (type default))
+    (uuid b2000040-0011-4000-8000-000000000001)
+  )
+  (wire (pts (xy 299.72 195.58) (xy 314.96 195.58))
+    (stroke (width 0) (type default))
+    (uuid b2000040-0012-4000-8000-000000000001)
+  )
+
+  ;; ===============================================================
+  ;; TS3USB221 USB Muxes — U4, U5
+  ;; ===============================================================
+
+  ;; USB Mux U4 (Slots 1-2)
+  (symbol (lib_id "agentosaurus:TS3USB221RSER") (at 170.18 83.82 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid b2000010-0014-4000-8000-000000000001)
+    (property "Reference" "U4" (at 170.18 68.58 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "TS3USB221 Mux1" (at 170.18 71.12 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_DFN_QFN:QFN-10-1EP_1.8x1.4mm_P0.5mm_EP0.5x1mm" (at 170.18 87.63 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 170.18 90.17 0) (effects (font (size 1.27 1.27)) hide))
+    (instances
+      (project "agentosaurus"
+        (path "/b2000001-0001-4000-8000-000000000001" (reference "U4") (unit 1))
+      )
+    )
+  )
+
+  ;; USB Mux U5 (Slots 3-4)
+  (symbol (lib_id "agentosaurus:TS3USB221RSER") (at 170.18 119.38 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid b2000010-0015-4000-8000-000000000001)
+    (property "Reference" "U5" (at 170.18 104.14 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "TS3USB221 Mux2" (at 170.18 106.68 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_DFN_QFN:QFN-10-1EP_1.8x1.4mm_P0.5mm_EP0.5x1mm" (at 170.18 123.19 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 170.18 125.73 0) (effects (font (size 1.27 1.27)) hide))
+    (instances
+      (project "agentosaurus"
+        (path "/b2000001-0001-4000-8000-000000000001" (reference "U5") (unit 1))
+      )
+    )
+  )
+
+  ;; ===============================================================
+  ;; Hierarchical Labels
+  ;; ===============================================================
+
+  ;; Power
+  (hierarchical_label "VCC5V0" (shape input) (at 38.1 175.26 180)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid b2000050-0001-4000-8000-000000000001)
+  )
+  (hierarchical_label "VCC3V3" (shape input) (at 38.1 177.8 180)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid b2000050-0002-4000-8000-000000000001)
+  )
+  (hierarchical_label "GND" (shape input) (at 38.1 180.34 180)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid b2000050-0003-4000-8000-000000000001)
+  )
+
+  ;; Per-slot power outputs (from TPS22918)
+  (hierarchical_label "SLOT1_5V" (shape output) (at 243.84 144.78 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid b2000050-0010-4000-8000-000000000001)
+  )
+  (hierarchical_label "SLOT2_5V" (shape output) (at 284.48 144.78 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid b2000050-0011-4000-8000-000000000001)
+  )
+  (hierarchical_label "SLOT3_5V" (shape output) (at 325.12 144.78 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid b2000050-0012-4000-8000-000000000001)
+  )
+  (hierarchical_label "SLOT4_5V" (shape output) (at 365.76 144.78 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid b2000050-0013-4000-8000-000000000001)
+  )
+
+  ;; TPS22918 VOUT wires to labels
+  (wire (pts (xy 241.3 144.78) (xy 243.84 144.78))
+    (stroke (width 0) (type default))
+    (uuid b2000040-0020-4000-8000-000000000001)
+  )
+  (wire (pts (xy 281.94 144.78) (xy 284.48 144.78))
+    (stroke (width 0) (type default))
+    (uuid b2000040-0021-4000-8000-000000000001)
+  )
+  (wire (pts (xy 322.58 144.78) (xy 325.12 144.78))
+    (stroke (width 0) (type default))
+    (uuid b2000040-0022-4000-8000-000000000001)
+  )
+  (wire (pts (xy 363.22 144.78) (xy 365.76 144.78))
+    (stroke (width 0) (type default))
+    (uuid b2000040-0023-4000-8000-000000000001)
+  )
+
+  ;; Per-slot UART
+  (hierarchical_label "SLOT1_UART_TX" (shape output) (at 274.32 64.14 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid b2000050-0020-4000-8000-000000000001)
+  )
+  (hierarchical_label "SLOT1_UART_RX" (shape input) (at 274.32 66.68 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid b2000050-0021-4000-8000-000000000001)
+  )
+  (hierarchical_label "SLOT2_UART_TX" (shape output) (at 274.32 71.76 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid b2000050-0022-4000-8000-000000000001)
+  )
+  (hierarchical_label "SLOT2_UART_RX" (shape input) (at 274.32 74.3 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid b2000050-0023-4000-8000-000000000001)
+  )
+  (hierarchical_label "SLOT3_UART_TX" (shape output) (at 274.32 79.38 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid b2000050-0024-4000-8000-000000000001)
+  )
+  (hierarchical_label "SLOT3_UART_RX" (shape input) (at 274.32 81.92 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid b2000050-0025-4000-8000-000000000001)
+  )
+  (hierarchical_label "SLOT4_UART_TX" (shape output) (at 274.32 86.36 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid b2000050-0026-4000-8000-000000000001)
+  )
+  (hierarchical_label "SLOT4_UART_RX" (shape input) (at 274.32 88.9 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid b2000050-0027-4000-8000-000000000001)
+  )
+
+  ;; Per-slot USB
+  (hierarchical_label "SLOT1_USB_P" (shape bidirectional) (at 195.58 78.74 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid b2000050-0030-4000-8000-000000000001)
+  )
+  (hierarchical_label "SLOT1_USB_N" (shape bidirectional) (at 195.58 81.28 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid b2000050-0031-4000-8000-000000000001)
+  )
+  (hierarchical_label "SLOT2_USB_P" (shape bidirectional) (at 195.58 86.36 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid b2000050-0032-4000-8000-000000000001)
+  )
+  (hierarchical_label "SLOT2_USB_N" (shape bidirectional) (at 195.58 88.9 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid b2000050-0033-4000-8000-000000000001)
+  )
+  (hierarchical_label "SLOT3_USB_P" (shape bidirectional) (at 195.58 114.3 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid b2000050-0034-4000-8000-000000000001)
+  )
+  (hierarchical_label "SLOT3_USB_N" (shape bidirectional) (at 195.58 116.84 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid b2000050-0035-4000-8000-000000000001)
+  )
+  (hierarchical_label "SLOT4_USB_P" (shape bidirectional) (at 195.58 121.92 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid b2000050-0036-4000-8000-000000000001)
+  )
+  (hierarchical_label "SLOT4_USB_N" (shape bidirectional) (at 195.58 124.46 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid b2000050-0037-4000-8000-000000000001)
+  )
+
+  ;; I2C
+  (hierarchical_label "I2C_SCL" (shape bidirectional) (at 38.1 185.42 180)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid b2000050-0040-4000-8000-000000000001)
+  )
+  (hierarchical_label "I2C_SDA" (shape bidirectional) (at 38.1 187.96 180)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid b2000050-0041-4000-8000-000000000001)
+  )
+
+  ;; ATX control
+  (hierarchical_label "ATX_PS_ON" (shape output) (at 38.1 193.04 180)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid b2000050-0050-4000-8000-000000000001)
+  )
+  (hierarchical_label "ATX_PWR_OK" (shape input) (at 38.1 195.58 180)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid b2000050-0051-4000-8000-000000000001)
+  )
+
+  ;; ===============================================================
+  ;; Section annotations
+  ;; ===============================================================
+
+  (text "ESP32-S3 BMC (Baseboard Management Controller)" (at 60.96 35.56 0)
+    (effects (font (size 3.81 3.81) bold) (justify left bottom))
+    (uuid b2000060-0001-4000-8000-000000000001)
+  )
+
+  (text "GPIO Assignments:\n  IO4-IO7: Slot 1-4 power enable (TPS22918 EN)\n  IO8: UART mux S0 / USB mux select A\n  IO9: UART mux S1 / USB mux select B\n  IO17: UART TX (to mux 1Z)\n  IO18: UART RX (to mux 2Z)\n  IO19: USB D- (USB-OTG)\n  IO20: USB D+ (USB-OTG)\n  IO21: WS2812B data out\n  IO6/IO7: I2C SDA/SCL" (at 60.96 40.64 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid b2000060-0002-4000-8000-000000000001)
+  )
+
+  (text "USB-C Management Port" (at 30.48 50.8 0)
+    (effects (font (size 2.54 2.54) bold) (justify left bottom))
+    (uuid b2000060-0003-4000-8000-000000000001)
+  )
+  (text "CC1/CC2: 5.1k to GND (UFP/sink)\nD+/D- through USBLC6-2SC6 ESD to ESP32 IO19/IO20" (at 30.48 55.88 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid b2000060-0004-4000-8000-000000000001)
+  )
+
+  (text "UART Mux (SN74LV4052A)" (at 213.36 55.88 0)
+    (effects (font (size 2.54 2.54) bold) (justify left bottom))
+    (uuid b2000060-0005-4000-8000-000000000001)
+  )
+  (text "Dual 4:1 analog mux\n1Z = ESP32 TX -> 1Y0-3 = Slot 1-4 TX\n2Z = ESP32 RX <- 2Y0-3 = Slot 1-4 RX\nS0/S1 from ESP32 GPIO8/9" (at 213.36 60.96 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid b2000060-0006-4000-8000-000000000001)
+  )
+
+  (text "TPS22918 Per-Slot Load Switches" (at 213.36 132.08 0)
+    (effects (font (size 2.54 2.54) bold) (justify left bottom))
+    (uuid b2000060-0007-4000-8000-000000000001)
+  )
+  (text "VIN=5V, VOUT per slot\nEN from ESP32 GPIO4-7\nCT: 10nF rise-time control\nCin=1uF, Cout=10uF per switch" (at 213.36 137.16 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid b2000060-0008-4000-8000-000000000001)
+  )
+
+  (text "WS2812B Status LEDs (cascaded)" (at 213.36 180.34 0)
+    (effects (font (size 2.54 2.54) bold) (justify left bottom))
+    (uuid b2000060-0009-4000-8000-000000000001)
+  )
+  (text "DIN chain from ESP32 IO21\nVDD=5V, 100nF per LED\nD1->D2->D3->D4" (at 213.36 185.42 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid b2000060-0010-4000-8000-000000000001)
+  )
+
+  (text "TS3USB221 USB Muxes" (at 152.4 63.5 0)
+    (effects (font (size 2.54 2.54) bold) (justify left bottom))
+    (uuid b2000060-0011-4000-8000-000000000001)
+  )
+  (text "U4: Slot 1/2 USB -> ESP32\nU5: Slot 3/4 USB -> ESP32\nSelect from ESP32 GPIO\nFor eMMC flashing" (at 152.4 68.58 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid b2000060-0012-4000-8000-000000000001)
+  )
+
+  (sheet_instances
+    (path "/" (page "7"))
+  )
+)

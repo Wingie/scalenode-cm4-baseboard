@@ -1,0 +1,369 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid c1000001-0001-4000-8000-000000000001)
+
+  (paper "A3")
+
+  (title_block
+    (title "Agentosaurus — CM4 Slot")
+    (date "2026-02-26")
+    (rev "0.1.0")
+    (company "Agentosaurus")
+    (comment 1 "CERN-OHL-P v2")
+    (comment 2 "Hierarchical sheet — instantiated x4")
+  )
+
+  (lib_symbols
+    ;; Ethernet Magnetics Quad
+    (symbol "agentosaurus:Ethernet_Magnetics_Quad" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "T" (at 0 1.27 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "Ethernet_Magnetics_Quad" (at 0 -1.27 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "Transformer_Ethernet:Transformer_Ethernet_Pulse_HX1188NL" (at 0 -3.81 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Datasheet" "" (at 0 -6.35 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "Ethernet_Magnetics_Quad_0_1"
+        (rectangle (start -15.24 30.48) (end 15.24 -30.48) (stroke (width 0.254) (type default)) (fill (type background)))
+      )
+      (symbol "Ethernet_Magnetics_Quad_1_1"
+        (pin passive line (at -17.78 27.94 0) (length 2.54) (name "TDP0" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at -17.78 25.4 0) (length 2.54) (name "TDN0" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at -17.78 20.32 0) (length 2.54) (name "TDP1" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at -17.78 17.78 0) (length 2.54) (name "TDN1" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at -17.78 12.7 0) (length 2.54) (name "TDP2" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at -17.78 10.16 0) (length 2.54) (name "TDN2" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at -17.78 5.08 0) (length 2.54) (name "TDP3" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at -17.78 2.54 0) (length 2.54) (name "TDN3" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at -17.78 -5.08 0) (length 2.54) (name "CT_P0" (effects (font (size 1.27 1.27)))) (number "9" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at -17.78 -7.62 0) (length 2.54) (name "CT_P1" (effects (font (size 1.27 1.27)))) (number "10" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at -17.78 -10.16 0) (length 2.54) (name "CT_P2" (effects (font (size 1.27 1.27)))) (number "11" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at -17.78 -12.7 0) (length 2.54) (name "CT_P3" (effects (font (size 1.27 1.27)))) (number "12" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at 17.78 27.94 180) (length 2.54) (name "LDP0" (effects (font (size 1.27 1.27)))) (number "13" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at 17.78 25.4 180) (length 2.54) (name "LDN0" (effects (font (size 1.27 1.27)))) (number "14" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at 17.78 20.32 180) (length 2.54) (name "LDP1" (effects (font (size 1.27 1.27)))) (number "15" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at 17.78 17.78 180) (length 2.54) (name "LDN1" (effects (font (size 1.27 1.27)))) (number "16" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at 17.78 12.7 180) (length 2.54) (name "LDP2" (effects (font (size 1.27 1.27)))) (number "17" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at 17.78 10.16 180) (length 2.54) (name "LDN2" (effects (font (size 1.27 1.27)))) (number "18" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at 17.78 5.08 180) (length 2.54) (name "LDP3" (effects (font (size 1.27 1.27)))) (number "19" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at 17.78 2.54 180) (length 2.54) (name "LDN3" (effects (font (size 1.27 1.27)))) (number "20" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at 17.78 -5.08 180) (length 2.54) (name "CT_L0" (effects (font (size 1.27 1.27)))) (number "21" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at 17.78 -7.62 180) (length 2.54) (name "CT_L1" (effects (font (size 1.27 1.27)))) (number "22" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at 17.78 -10.16 180) (length 2.54) (name "CT_L2" (effects (font (size 1.27 1.27)))) (number "23" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at 17.78 -12.7 180) (length 2.54) (name "CT_L3" (effects (font (size 1.27 1.27)))) (number "24" (effects (font (size 1.27 1.27)))))
+        (pin power_in line (at 0 -33.02 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "25" (effects (font (size 1.27 1.27)))))
+        (pin power_in line (at 2.54 -33.02 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "26" (effects (font (size 1.27 1.27)))))
+      )
+    )
+
+    ;; GND power symbol
+    (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 -6.35 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Value" "GND" (at 0 -3.81 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "GND_0_1"
+        (polyline (pts (xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)) (stroke (width 0) (type default)) (fill (type none)))
+      )
+      (symbol "GND_1_1"
+        (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+      )
+    )
+  )
+
+  ;; ===============================================================
+  ;; CM4 DF40 Connector Pair — Represented as text block
+  ;; (Actual DF40C-100DS-0.4V pair from scalenode-cm4-baseboard lib)
+  ;; ===============================================================
+
+  (text "CM4 DF40 Connector Pair (J1+J2)" (at 38.1 35.56 0)
+    (effects (font (size 3.81 3.81) bold) (justify left bottom))
+    (uuid c1000060-0001-4000-8000-000000000001)
+  )
+
+  (text "Signals from CM4 module:\n  Ethernet: TRD0-3 P/N (8 diff lines)\n  PCIe: TX/RX P/N, CLK P/N, nRST\n  USB 2.0: D+, D-\n  UART: TXD, RXD\n  SD Card: CLK, CMD, DAT0-3\n  Power: 5V in, 3V3_SSD out\n  Control: GLOBAL_EN, RUN_PG, nEXTRST" (at 38.1 43.18 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid c1000060-0002-4000-8000-000000000001)
+  )
+
+  ;; ===============================================================
+  ;; Ethernet Magnetics T1
+  ;; CM4 TRD0-3 -> magnetics -> switch PHY port
+  ;; ===============================================================
+
+  (symbol (lib_id "agentosaurus:Ethernet_Magnetics_Quad") (at 167.64 86.36 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid c1000010-0001-4000-8000-000000000001)
+    (property "Reference" "T1" (at 167.64 53.34 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "HX1188NL" (at 167.64 55.88 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Transformer_Ethernet:Transformer_Ethernet_Pulse_HX1188NL" (at 167.64 90.17 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 167.64 92.71 0) (effects (font (size 1.27 1.27)) hide))
+    (instances
+      (project "agentosaurus"
+        (path "/c1000001-0001-4000-8000-000000000001" (reference "T1") (unit 1))
+      )
+    )
+  )
+
+  ;; GND for magnetics
+  (symbol (lib_id "power:GND") (at 167.64 121.92 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid c1000020-0001-4000-8000-000000000001)
+    (property "Reference" "#PWR011" (at 167.64 128.27 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 167.64 125.73 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 167.64 121.92 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 167.64 121.92 0) (effects (font (size 1.27 1.27)) hide))
+    (instances (project "agentosaurus" (path "/c1000001-0001-4000-8000-000000000001" (reference "#PWR011") (unit 1))))
+  )
+
+  ;; Wire magnetics GND
+  (wire (pts (xy 167.64 119.38) (xy 167.64 121.92))
+    (stroke (width 0) (type default))
+    (uuid c1000040-0001-4000-8000-000000000001)
+  )
+
+  ;; ===============================================================
+  ;; Net labels — CM4 side of magnetics (TDP/TDN pins)
+  ;; ===============================================================
+
+  (net_label "CM4_TRD0_P" (at 135.89 58.42 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid c1000030-0001-4000-8000-000000000001)
+  )
+  (net_label "CM4_TRD0_N" (at 135.89 60.96 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid c1000030-0002-4000-8000-000000000001)
+  )
+  (net_label "CM4_TRD1_P" (at 135.89 66.04 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid c1000030-0003-4000-8000-000000000001)
+  )
+  (net_label "CM4_TRD1_N" (at 135.89 68.58 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid c1000030-0004-4000-8000-000000000001)
+  )
+  (net_label "CM4_TRD2_P" (at 135.89 73.66 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid c1000030-0005-4000-8000-000000000001)
+  )
+  (net_label "CM4_TRD2_N" (at 135.89 76.2 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid c1000030-0006-4000-8000-000000000001)
+  )
+  (net_label "CM4_TRD3_P" (at 135.89 81.28 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid c1000030-0007-4000-8000-000000000001)
+  )
+  (net_label "CM4_TRD3_N" (at 135.89 83.82 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid c1000030-0008-4000-8000-000000000001)
+  )
+
+  ;; Wires from CM4 net labels to magnetics TDP/TDN input pins
+  (wire (pts (xy 135.89 58.42) (xy 149.86 58.42))
+    (stroke (width 0) (type default))
+    (uuid c1000040-0010-4000-8000-000000000001)
+  )
+  (wire (pts (xy 135.89 60.96) (xy 149.86 60.96))
+    (stroke (width 0) (type default))
+    (uuid c1000040-0011-4000-8000-000000000001)
+  )
+  (wire (pts (xy 135.89 66.04) (xy 149.86 66.04))
+    (stroke (width 0) (type default))
+    (uuid c1000040-0012-4000-8000-000000000001)
+  )
+  (wire (pts (xy 135.89 68.58) (xy 149.86 68.58))
+    (stroke (width 0) (type default))
+    (uuid c1000040-0013-4000-8000-000000000001)
+  )
+  (wire (pts (xy 135.89 73.66) (xy 149.86 73.66))
+    (stroke (width 0) (type default))
+    (uuid c1000040-0014-4000-8000-000000000001)
+  )
+  (wire (pts (xy 135.89 76.2) (xy 149.86 76.2))
+    (stroke (width 0) (type default))
+    (uuid c1000040-0015-4000-8000-000000000001)
+  )
+  (wire (pts (xy 135.89 81.28) (xy 149.86 81.28))
+    (stroke (width 0) (type default))
+    (uuid c1000040-0016-4000-8000-000000000001)
+  )
+  (wire (pts (xy 135.89 83.82) (xy 149.86 83.82))
+    (stroke (width 0) (type default))
+    (uuid c1000040-0017-4000-8000-000000000001)
+  )
+
+  ;; ===============================================================
+  ;; Hierarchical Labels — Ethernet to switch (line side of magnetics)
+  ;; ===============================================================
+
+  (hierarchical_label "ETH_TRD0_P" (shape bidirectional) (at 200.66 58.42 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid c1000050-0001-4000-8000-000000000001)
+  )
+  (hierarchical_label "ETH_TRD0_N" (shape bidirectional) (at 200.66 60.96 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid c1000050-0002-4000-8000-000000000001)
+  )
+  (hierarchical_label "ETH_TRD1_P" (shape bidirectional) (at 200.66 66.04 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid c1000050-0003-4000-8000-000000000001)
+  )
+  (hierarchical_label "ETH_TRD1_N" (shape bidirectional) (at 200.66 68.58 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid c1000050-0004-4000-8000-000000000001)
+  )
+  (hierarchical_label "ETH_TRD2_P" (shape bidirectional) (at 200.66 73.66 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid c1000050-0005-4000-8000-000000000001)
+  )
+  (hierarchical_label "ETH_TRD2_N" (shape bidirectional) (at 200.66 76.2 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid c1000050-0006-4000-8000-000000000001)
+  )
+  (hierarchical_label "ETH_TRD3_P" (shape bidirectional) (at 200.66 81.28 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid c1000050-0007-4000-8000-000000000001)
+  )
+  (hierarchical_label "ETH_TRD3_N" (shape bidirectional) (at 200.66 83.82 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid c1000050-0008-4000-8000-000000000001)
+  )
+
+  ;; Wires from magnetics LDP/LDN output to hierarchical labels
+  (wire (pts (xy 185.42 58.42) (xy 200.66 58.42))
+    (stroke (width 0) (type default))
+    (uuid c1000040-0020-4000-8000-000000000001)
+  )
+  (wire (pts (xy 185.42 60.96) (xy 200.66 60.96))
+    (stroke (width 0) (type default))
+    (uuid c1000040-0021-4000-8000-000000000001)
+  )
+  (wire (pts (xy 185.42 66.04) (xy 200.66 66.04))
+    (stroke (width 0) (type default))
+    (uuid c1000040-0022-4000-8000-000000000001)
+  )
+  (wire (pts (xy 185.42 68.58) (xy 200.66 68.58))
+    (stroke (width 0) (type default))
+    (uuid c1000040-0023-4000-8000-000000000001)
+  )
+  (wire (pts (xy 185.42 73.66) (xy 200.66 73.66))
+    (stroke (width 0) (type default))
+    (uuid c1000040-0024-4000-8000-000000000001)
+  )
+  (wire (pts (xy 185.42 76.2) (xy 200.66 76.2))
+    (stroke (width 0) (type default))
+    (uuid c1000040-0025-4000-8000-000000000001)
+  )
+  (wire (pts (xy 185.42 81.28) (xy 200.66 81.28))
+    (stroke (width 0) (type default))
+    (uuid c1000040-0026-4000-8000-000000000001)
+  )
+  (wire (pts (xy 185.42 83.82) (xy 200.66 83.82))
+    (stroke (width 0) (type default))
+    (uuid c1000040-0027-4000-8000-000000000001)
+  )
+
+  ;; ===============================================================
+  ;; Hierarchical Labels — USB, UART, Control, Power
+  ;; ===============================================================
+
+  (hierarchical_label "USB_P" (shape bidirectional) (at 200.66 142.24 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid c1000050-0010-4000-8000-000000000001)
+  )
+  (hierarchical_label "USB_N" (shape bidirectional) (at 200.66 144.78 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid c1000050-0011-4000-8000-000000000001)
+  )
+  (hierarchical_label "UART_TX" (shape output) (at 200.66 152.4 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid c1000050-0012-4000-8000-000000000001)
+  )
+  (hierarchical_label "UART_RX" (shape input) (at 200.66 154.94 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid c1000050-0013-4000-8000-000000000001)
+  )
+  (hierarchical_label "GLOBAL_EN" (shape input) (at 200.66 162.56 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid c1000050-0014-4000-8000-000000000001)
+  )
+  (hierarchical_label "RUN_PG" (shape output) (at 200.66 165.1 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid c1000050-0015-4000-8000-000000000001)
+  )
+  (hierarchical_label "nEXTRST" (shape input) (at 200.66 167.64 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid c1000050-0016-4000-8000-000000000001)
+  )
+  (hierarchical_label "VCC5V0" (shape input) (at 200.66 175.26 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid c1000050-0017-4000-8000-000000000001)
+  )
+  (hierarchical_label "GND" (shape input) (at 200.66 177.8 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid c1000050-0018-4000-8000-000000000001)
+  )
+
+  ;; ===============================================================
+  ;; M.2 NVMe Slot annotation
+  ;; ===============================================================
+
+  (text "M.2 Key-M NVMe Slot (J3)" (at 38.1 134.62 0)
+    (effects (font (size 2.54 2.54) bold) (justify left bottom))
+    (uuid c1000060-0010-4000-8000-000000000001)
+  )
+  (text "PCIe x1 Gen2 from CM4:\n  PCIe_TX_P/N, PCIe_RX_P/N\n  PCIe_CLK_P/N (100MHz ref clk)\n  CLKREQ#, PERST#, WAKE#\n  3V3_SSD power from CM4\nConnector: Amphenol MDT580M01001" (at 38.1 139.7 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid c1000060-0011-4000-8000-000000000001)
+  )
+
+  ;; ===============================================================
+  ;; MicroSD Slot annotation
+  ;; ===============================================================
+
+  (text "MicroSD Card Slot (J4)" (at 38.1 170.18 0)
+    (effects (font (size 2.54 2.54) bold) (justify left bottom))
+    (uuid c1000060-0020-4000-8000-000000000001)
+  )
+  (text "SD signals from CM4:\n  SD_CLK, SD_CMD\n  SD_DAT0-3\n  Card Detect\n  3.3V power with 10uF+100nF decoupling" (at 38.1 175.26 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid c1000060-0021-4000-8000-000000000001)
+  )
+
+  ;; ===============================================================
+  ;; Decoupling annotation
+  ;; ===============================================================
+
+  (text "Decoupling Capacitors" (at 38.1 200.66 0)
+    (effects (font (size 2.54 2.54) bold) (justify left bottom))
+    (uuid c1000060-0030-4000-8000-000000000001)
+  )
+  (text "5V rail: 100uF bulk + 10uF MLCC\n3.3V rail: 10uF + 100nF\nEthernet CT pins: 100nF to GND each" (at 38.1 205.74 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid c1000060-0031-4000-8000-000000000001)
+  )
+
+  ;; ===============================================================
+  ;; Ethernet magnetics section title
+  ;; ===============================================================
+
+  (text "Ethernet Magnetics (1:1)" (at 140.97 35.56 0)
+    (effects (font (size 2.54 2.54) bold) (justify left bottom))
+    (uuid c1000060-0040-4000-8000-000000000001)
+  )
+  (text "CM4 BCM54210PE PHY <-> RTL8367S PHY\nThrough HX1188NL quad magnetics" (at 140.97 43.18 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid c1000060-0041-4000-8000-000000000001)
+  )
+
+  ;; ===============================================================
+  ;; Interface labels section
+  ;; ===============================================================
+
+  (text "Inter-sheet Connections" (at 175.26 130.81 0)
+    (effects (font (size 2.54 2.54) bold) (justify left bottom))
+    (uuid c1000060-0050-4000-8000-000000000001)
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)
