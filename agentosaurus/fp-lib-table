@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "agentosaurus-footprints")(type "KiCad")(uri "${KIPRJMOD}/lib/agentosaurus-footprints/")(options "")(descr "Agentosaurus Edge Node footprints"))
+  (lib (name "scalenode-cm4-baseboard-footprints")(type "KiCad")(uri "${KIPRJMOD}/../lib/scalenode-cm4-baseboard-footprints/")(options "")(descr "Upstream scalenode footprints"))
+)
