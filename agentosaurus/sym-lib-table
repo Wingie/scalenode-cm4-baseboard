@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "agentosaurus")(type "KiCad")(uri "${KIPRJMOD}/lib/agentosaurus.kicad_sym")(options "")(descr "Agentosaurus Edge Node symbols"))
+  (lib (name "scalenode-cm4-baseboard")(type "KiCad")(uri "${KIPRJMOD}/../lib/scalenode-cm4-baseboard.kicad_sym")(options "")(descr "Upstream scalenode symbols"))
+)
