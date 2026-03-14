@@ -313,6 +313,33 @@
     (uuid b1000040-0003-4000-8000-000000000001)
   )
 
+  (text "Layer Stackup (JLC06161H-3313):" (at 50.8 121.92 0)
+    (effects (font (size 2.54 2.54) bold) (justify left bottom))
+    (uuid b1000040-0004-4000-8000-000000000001)
+  )
+  (text "L1 Signal (35um Cu)\nPrepreg 7628 (0.21mm)\nL2 GND Plane (17.5um Cu)\nCore (0.565mm)\nL3 Signal (17.5um Cu)\nPrepreg 7628 (0.21mm)\nL4 Signal (17.5um Cu)\nCore (0.565mm)\nL5 Power Plane (17.5um Cu)\nPrepreg 7628 (0.21mm)\nL6 Signal (35um Cu)\nTotal: ~1.6mm" (at 50.8 127 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid b1000040-0005-4000-8000-000000000001)
+  )
+
+  (text "Impedance Control:" (at 50.8 165.1 0)
+    (effects (font (size 2.54 2.54) bold) (justify left bottom))
+    (uuid b1000040-0006-4000-8000-000000000001)
+  )
+  (text "100 ohm differential — Ethernet (TRD pairs)\n85 ohm differential — PCIe TX/RX\n90 ohm differential — USB 2.0\n50 ohm single-ended — general signals\nTrace/space: 0.1mm/0.127mm typical" (at 50.8 170.18 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid b1000040-0007-4000-8000-000000000001)
+  )
+
+  (text "Board Edge Clearance: 0.3mm min" (at 50.8 193.04 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid b1000040-0008-4000-8000-000000000001)
+  )
+  (text "Via: 0.3mm drill / 0.6mm pad (standard)\nVia: 0.2mm drill / 0.45mm pad (BGA/fine pitch)" (at 50.8 198.12 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid b1000040-0009-4000-8000-000000000001)
+  )
+
   ;; ---------------------------------------------------------------
   ;; Project info text
   ;; ---------------------------------------------------------------
