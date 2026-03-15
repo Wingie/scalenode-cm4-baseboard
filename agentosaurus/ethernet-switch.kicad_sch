@@ -972,9 +972,428 @@
   ;; the uplink magnetics T1.
   ;; ===============================================================
 
-  (text "TODO: Add RTL8367S Units 2-6 to symbol library\nUnit 2: Port 2-3 PHY (Slots 3-4)\nUnit 3: Port 4 PHY (Uplink)\nUnit 5: Control (XTL, RST, LED, STRAP)\nUnit 6: Power distribution" (at 60.96 240.03 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid e1000060-0060-4000-8000-000000000001)
+  ;; ===============================================================
+  ;; RTL8367S Switch IC — Unit 2 (Ports 2-3 PHY, Slots 3-4)
+  ;; ===============================================================
+
+  (text "Unit 2: Port 2 (Slot 3) + Port 3 (Slot 4) PHY" (at 60.96 170.18 0)
+    (effects (font (size 2.54 2.54) bold) (justify left bottom))
+    (uuid e1000060-0050-4000-8000-000000000002)
+  )
+
+  (symbol (lib_id "agentosaurus:RTL8367S") (at 99.06 180.34 0) (unit 2)
+    (in_bom yes) (on_board yes)
+    (uuid e1000010-0050-4000-8000-000000000001)
+    (property "Reference" "U1" (at 99.06 152.4 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "RTL8367S" (at 99.06 154.94 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_QFP:LQFP-128_14x14mm_P0.4mm" (at 99.06 184.15 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 99.06 186.69 0) (effects (font (size 1.27 1.27)) hide))
+    (instances
+      (project "agentosaurus"
+        (path "/e1000001-0001-4000-8000-000000000001" (reference "U1") (unit 2))
+      )
+    )
+  )
+
+  ;; Net labels at Unit 2 Port 2 pins (Slot 3) — pin side
+  (net_label "TXDP0_P2" (at 83.82 157.48 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0050-4000-8000-000000000001))
+  (net_label "TXDN0_P2" (at 83.82 160.02 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0051-4000-8000-000000000001))
+  (net_label "TXDP1_P2" (at 83.82 162.56 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0052-4000-8000-000000000001))
+  (net_label "TXDN1_P2" (at 83.82 165.1 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0053-4000-8000-000000000001))
+  (net_label "TXDP2_P2" (at 83.82 167.64 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0054-4000-8000-000000000001))
+  (net_label "TXDN2_P2" (at 83.82 170.18 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0055-4000-8000-000000000001))
+  (net_label "TXDP3_P2" (at 83.82 172.72 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0056-4000-8000-000000000001))
+  (net_label "TXDN3_P2" (at 83.82 175.26 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0057-4000-8000-000000000001))
+
+  ;; Net labels at Unit 2 Port 3 pins (Slot 4) — pin side
+  (net_label "TXDP0_P3" (at 83.82 177.8 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0058-4000-8000-000000000001))
+  (net_label "TXDN0_P3" (at 83.82 180.34 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0059-4000-8000-000000000001))
+  (net_label "TXDP1_P3" (at 83.82 182.88 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0060-4000-8000-000000000001))
+  (net_label "TXDN1_P3" (at 83.82 185.42 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0061-4000-8000-000000000001))
+  (net_label "TXDP2_P3" (at 83.82 187.96 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0062-4000-8000-000000000001))
+  (net_label "TXDN2_P3" (at 83.82 190.5 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0063-4000-8000-000000000001))
+  (net_label "TXDP3_P3" (at 83.82 193.04 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0064-4000-8000-000000000001))
+  (net_label "TXDN3_P3" (at 83.82 195.58 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0065-4000-8000-000000000001))
+
+  ;; Net labels at Slot 3 hierarchical labels — label side
+  (net_label "TXDP0_P2" (at 50.8 109.22 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid e1000030-0070-4000-8000-000000000001))
+  (net_label "TXDN0_P2" (at 50.8 111.76 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid e1000030-0071-4000-8000-000000000001))
+  (net_label "TXDP1_P2" (at 50.8 114.3 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid e1000030-0072-4000-8000-000000000001))
+  (net_label "TXDN1_P2" (at 50.8 116.84 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid e1000030-0073-4000-8000-000000000001))
+  (net_label "TXDP2_P2" (at 50.8 119.38 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid e1000030-0074-4000-8000-000000000001))
+  (net_label "TXDN2_P2" (at 50.8 121.92 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid e1000030-0075-4000-8000-000000000001))
+  (net_label "TXDP3_P2" (at 50.8 124.46 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid e1000030-0076-4000-8000-000000000001))
+  (net_label "TXDN3_P2" (at 50.8 127 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid e1000030-0077-4000-8000-000000000001))
+
+  ;; Net labels at Slot 4 hierarchical labels — label side
+  (net_label "TXDP0_P3" (at 50.8 134.62 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid e1000030-0078-4000-8000-000000000001))
+  (net_label "TXDN0_P3" (at 50.8 137.16 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid e1000030-0079-4000-8000-000000000001))
+  (net_label "TXDP1_P3" (at 50.8 139.7 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid e1000030-0080-4000-8000-000000000001))
+  (net_label "TXDN1_P3" (at 50.8 142.24 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid e1000030-0081-4000-8000-000000000001))
+  (net_label "TXDP2_P3" (at 50.8 144.78 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid e1000030-0082-4000-8000-000000000001))
+  (net_label "TXDN2_P3" (at 50.8 147.32 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid e1000030-0083-4000-8000-000000000001))
+  (net_label "TXDP3_P3" (at 50.8 149.86 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid e1000030-0084-4000-8000-000000000001))
+  (net_label "TXDN3_P3" (at 50.8 152.4 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid e1000030-0085-4000-8000-000000000001))
+
+  ;; ===============================================================
+  ;; RTL8367S Switch IC — Unit 3 (Port 4 PHY, Uplink)
+  ;; ===============================================================
+
+  (text "Unit 3: Port 4 (Uplink) PHY" (at 160.02 60.96 0)
+    (effects (font (size 2.54 2.54) bold) (justify left bottom))
+    (uuid e1000060-0050-4000-8000-000000000003)
+  )
+
+  (symbol (lib_id "agentosaurus:RTL8367S") (at 175.26 81.28 0) (unit 3)
+    (in_bom yes) (on_board yes)
+    (uuid e1000010-0051-4000-8000-000000000001)
+    (property "Reference" "U1" (at 175.26 63.5 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "RTL8367S" (at 175.26 66.04 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_QFP:LQFP-128_14x14mm_P0.4mm" (at 175.26 85.09 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 175.26 87.63 0) (effects (font (size 1.27 1.27)) hide))
+    (instances
+      (project "agentosaurus"
+        (path "/e1000001-0001-4000-8000-000000000001" (reference "U1") (unit 3))
+      )
+    )
+  )
+
+  ;; Net labels at Unit 3 Port 4 pins — pin side
+  (net_label "TXDP0_P4" (at 160.02 68.58 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0090-4000-8000-000000000001))
+  (net_label "TXDN0_P4" (at 160.02 71.12 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0091-4000-8000-000000000001))
+  (net_label "TXDP1_P4" (at 160.02 73.66 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0092-4000-8000-000000000001))
+  (net_label "TXDN1_P4" (at 160.02 76.2 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0093-4000-8000-000000000001))
+  (net_label "TXDP2_P4" (at 160.02 78.74 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0094-4000-8000-000000000001))
+  (net_label "TXDN2_P4" (at 160.02 81.28 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0095-4000-8000-000000000001))
+  (net_label "TXDP3_P4" (at 160.02 83.82 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0096-4000-8000-000000000001))
+  (net_label "TXDN3_P4" (at 160.02 86.36 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0097-4000-8000-000000000001))
+
+  ;; Net labels at T1 magnetics TDP pins — magnetics side
+  (net_label "TXDP0_P4" (at 241.3 53.34 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0100-4000-8000-000000000001))
+  (net_label "TXDN0_P4" (at 241.3 55.88 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0101-4000-8000-000000000001))
+  (net_label "TXDP1_P4" (at 241.3 60.96 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0102-4000-8000-000000000001))
+  (net_label "TXDN1_P4" (at 241.3 63.5 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0103-4000-8000-000000000001))
+  (net_label "TXDP2_P4" (at 241.3 68.58 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0104-4000-8000-000000000001))
+  (net_label "TXDN2_P4" (at 241.3 71.12 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0105-4000-8000-000000000001))
+  (net_label "TXDP3_P4" (at 241.3 76.2 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0106-4000-8000-000000000001))
+  (net_label "TXDN3_P4" (at 241.3 78.74 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0107-4000-8000-000000000001))
+
+  ;; ===============================================================
+  ;; RTL8367S Switch IC — Unit 5 (Control)
+  ;; ===============================================================
+
+  (text "Unit 5: Control (MDC/MDIO, XTL, RESET, STRAP, LEDs)" (at 60.96 248.92 0)
+    (effects (font (size 2.54 2.54) bold) (justify left bottom))
+    (uuid e1000060-0050-4000-8000-000000000005)
+  )
+
+  (symbol (lib_id "agentosaurus:RTL8367S") (at 99.06 269.24 0) (unit 5)
+    (in_bom yes) (on_board yes)
+    (uuid e1000010-0052-4000-8000-000000000001)
+    (property "Reference" "U1" (at 99.06 246.38 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "RTL8367S" (at 99.06 248.92 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_QFP:LQFP-128_14x14mm_P0.4mm" (at 99.06 273.05 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 99.06 275.59 0) (effects (font (size 1.27 1.27)) hide))
+    (instances
+      (project "agentosaurus"
+        (path "/e1000001-0001-4000-8000-000000000001" (reference "U1") (unit 5))
+      )
+    )
+  )
+
+  ;; MDC -> I2C_SCL net label
+  (net_label "I2C_SCL" (at 83.82 251.46 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0110-4000-8000-000000000001))
+
+  ;; MDIO -> I2C_SDA net label
+  (net_label "I2C_SDA" (at 83.82 254.0 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0111-4000-8000-000000000001))
+
+  ;; XTL_IN net label
+  (net_label "XTL_IN" (at 83.82 259.08 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0112-4000-8000-000000000001))
+
+  ;; XTL_OUT net label
+  (net_label "XTL_OUT" (at 114.3 259.08 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid e1000030-0113-4000-8000-000000000001))
+
+  ;; XTL_IN net label at crystal Y1 IN pin (93.98, 149.86)
+  (net_label "XTL_IN" (at 91.44 149.86 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0114-4000-8000-000000000001))
+
+  ;; XTL_OUT net label at crystal Y1 OUT pin (104.14, 149.86)
+  (net_label "XTL_OUT" (at 106.68 149.86 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid e1000030-0115-4000-8000-000000000001))
+
+  ;; I2C_SCL net label at hierarchical label
+  (net_label "I2C_SCL" (at 50.8 182.88 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid e1000030-0116-4000-8000-000000000001))
+
+  ;; I2C_SDA net label at hierarchical label
+  (net_label "I2C_SDA" (at 50.8 185.42 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid e1000030-0117-4000-8000-000000000001))
+
+  ;; MNG_MODE pull-up to VCC3V3 (SMI mode) — R1 10k
+  (symbol (lib_id "Device:R") (at 76.2 265.43 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid e1000010-0060-4000-8000-000000000001)
+    (property "Reference" "R1" (at 78.74 265.43 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "10k" (at 78.74 267.97 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 76.2 265.43 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 76.2 265.43 0) (effects (font (size 1.27 1.27)) hide))
+    (instances (project "agentosaurus" (path "/e1000001-0001-4000-8000-000000000001" (reference "R1") (unit 1))))
+  )
+  (symbol (lib_id "power:VCC3V3") (at 76.2 261.62 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid e1000010-0061-4000-8000-000000000001)
+    (property "Reference" "#PWR050" (at 76.2 257.81 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "VCC3V3" (at 76.2 258.57 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 76.2 261.62 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 76.2 261.62 0) (effects (font (size 1.27 1.27)) hide))
+    (instances (project "agentosaurus" (path "/e1000001-0001-4000-8000-000000000001" (reference "#PWR050") (unit 1))))
+  )
+  (wire (pts (xy 76.2 269.24) (xy 83.82 269.24))
+    (stroke (width 0) (type default))
+    (uuid e1000040-0060-4000-8000-000000000001)
+  )
+
+  ;; ~{RESET} pull-up to VCC3V3 — R2 10k
+  (symbol (lib_id "Device:R") (at 76.2 278.13 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid e1000010-0062-4000-8000-000000000001)
+    (property "Reference" "R2" (at 78.74 278.13 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "10k" (at 78.74 280.67 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 76.2 278.13 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 76.2 278.13 0) (effects (font (size 1.27 1.27)) hide))
+    (instances (project "agentosaurus" (path "/e1000001-0001-4000-8000-000000000001" (reference "R2") (unit 1))))
+  )
+  (symbol (lib_id "power:VCC3V3") (at 76.2 274.32 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid e1000010-0063-4000-8000-000000000001)
+    (property "Reference" "#PWR051" (at 76.2 270.51 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "VCC3V3" (at 76.2 271.27 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 76.2 274.32 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 76.2 274.32 0) (effects (font (size 1.27 1.27)) hide))
+    (instances (project "agentosaurus" (path "/e1000001-0001-4000-8000-000000000001" (reference "#PWR051") (unit 1))))
+  )
+  (wire (pts (xy 76.2 281.94) (xy 83.82 281.94))
+    (stroke (width 0) (type default))
+    (uuid e1000040-0061-4000-8000-000000000001)
+  )
+
+  ;; LED_SEL pull-down to GND
+  (symbol (lib_id "power:GND") (at 78.74 264.16 270) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid e1000020-0050-4000-8000-000000000001)
+    (property "Reference" "#PWR052" (at 72.39 264.16 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 74.93 264.16 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 78.74 264.16 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 78.74 264.16 0) (effects (font (size 1.27 1.27)) hide))
+    (instances (project "agentosaurus" (path "/e1000001-0001-4000-8000-000000000001" (reference "#PWR052") (unit 1))))
+  )
+  (wire (pts (xy 78.74 264.16) (xy 83.82 264.16))
+    (stroke (width 0) (type default))
+    (uuid e1000040-0062-4000-8000-000000000001)
+  )
+
+  ;; PHYADD pull-down to GND
+  (symbol (lib_id "power:GND") (at 78.74 266.7 270) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid e1000020-0051-4000-8000-000000000001)
+    (property "Reference" "#PWR053" (at 72.39 266.7 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 74.93 266.7 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 78.74 266.7 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 78.74 266.7 0) (effects (font (size 1.27 1.27)) hide))
+    (instances (project "agentosaurus" (path "/e1000001-0001-4000-8000-000000000001" (reference "#PWR053") (unit 1))))
+  )
+  (wire (pts (xy 78.74 266.7) (xy 83.82 266.7))
+    (stroke (width 0) (type default))
+    (uuid e1000040-0063-4000-8000-000000000001)
+  )
+
+  ;; STRAP0 pull-down to GND
+  (symbol (lib_id "power:GND") (at 78.74 271.78 270) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid e1000020-0052-4000-8000-000000000001)
+    (property "Reference" "#PWR054" (at 72.39 271.78 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 74.93 271.78 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 78.74 271.78 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 78.74 271.78 0) (effects (font (size 1.27 1.27)) hide))
+    (instances (project "agentosaurus" (path "/e1000001-0001-4000-8000-000000000001" (reference "#PWR054") (unit 1))))
+  )
+  (wire (pts (xy 78.74 271.78) (xy 83.82 271.78))
+    (stroke (width 0) (type default))
+    (uuid e1000040-0064-4000-8000-000000000001)
+  )
+
+  ;; STRAP1 pull-down to GND
+  (symbol (lib_id "power:GND") (at 78.74 274.32 270) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid e1000020-0053-4000-8000-000000000001)
+    (property "Reference" "#PWR055" (at 72.39 274.32 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 74.93 274.32 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 78.74 274.32 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 78.74 274.32 0) (effects (font (size 1.27 1.27)) hide))
+    (instances (project "agentosaurus" (path "/e1000001-0001-4000-8000-000000000001" (reference "#PWR055") (unit 1))))
+  )
+  (wire (pts (xy 78.74 274.32) (xy 83.82 274.32))
+    (stroke (width 0) (type default))
+    (uuid e1000040-0065-4000-8000-000000000001)
+  )
+
+  ;; STRAP2 pull-down to GND
+  (symbol (lib_id "power:GND") (at 78.74 276.86 270) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid e1000020-0054-4000-8000-000000000001)
+    (property "Reference" "#PWR056" (at 72.39 276.86 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 74.93 276.86 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 78.74 276.86 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 78.74 276.86 0) (effects (font (size 1.27 1.27)) hide))
+    (instances (project "agentosaurus" (path "/e1000001-0001-4000-8000-000000000001" (reference "#PWR056") (unit 1))))
+  )
+  (wire (pts (xy 78.74 276.86) (xy 83.82 276.86))
+    (stroke (width 0) (type default))
+    (uuid e1000040-0066-4000-8000-000000000001)
+  )
+
+  ;; STRAP3 pull-down to GND
+  (symbol (lib_id "power:GND") (at 78.74 279.4 270) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid e1000020-0055-4000-8000-000000000001)
+    (property "Reference" "#PWR057" (at 72.39 279.4 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 74.93 279.4 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 78.74 279.4 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 78.74 279.4 0) (effects (font (size 1.27 1.27)) hide))
+    (instances (project "agentosaurus" (path "/e1000001-0001-4000-8000-000000000001" (reference "#PWR057") (unit 1))))
+  )
+  (wire (pts (xy 78.74 279.4) (xy 83.82 279.4))
+    (stroke (width 0) (type default))
+    (uuid e1000040-0067-4000-8000-000000000001)
+  )
+
+  ;; RSVD_CTRL0 and RSVD_CTRL1 pull-down to GND
+  (symbol (lib_id "power:GND") (at 78.74 284.48 270) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid e1000020-0056-4000-8000-000000000001)
+    (property "Reference" "#PWR058" (at 72.39 284.48 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 74.93 284.48 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 78.74 284.48 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 78.74 284.48 0) (effects (font (size 1.27 1.27)) hide))
+    (instances (project "agentosaurus" (path "/e1000001-0001-4000-8000-000000000001" (reference "#PWR058") (unit 1))))
+  )
+  (wire (pts (xy 78.74 284.48) (xy 83.82 284.48))
+    (stroke (width 0) (type default))
+    (uuid e1000040-0068-4000-8000-000000000001)
+  )
+  (symbol (lib_id "power:GND") (at 78.74 287.02 270) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid e1000020-0057-4000-8000-000000000001)
+    (property "Reference" "#PWR059" (at 72.39 287.02 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 74.93 287.02 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 78.74 287.02 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 78.74 287.02 0) (effects (font (size 1.27 1.27)) hide))
+    (instances (project "agentosaurus" (path "/e1000001-0001-4000-8000-000000000001" (reference "#PWR059") (unit 1))))
+  )
+  (wire (pts (xy 78.74 287.02) (xy 83.82 287.02))
+    (stroke (width 0) (type default))
+    (uuid e1000040-0069-4000-8000-000000000001)
+  )
+
+  ;; ===============================================================
+  ;; RTL8367S Switch IC — Unit 6 (Power)
+  ;; ===============================================================
+
+  (text "Unit 6: Power (AVDD33, DVDD33, DVDD11, GND)" (at 60.96 338.14 0)
+    (effects (font (size 2.54 2.54) bold) (justify left bottom))
+    (uuid e1000060-0050-4000-8000-000000000006)
+  )
+
+  (symbol (lib_id "agentosaurus:RTL8367S") (at 99.06 358.14 0) (unit 6)
+    (in_bom yes) (on_board yes)
+    (uuid e1000010-0053-4000-8000-000000000001)
+    (property "Reference" "U1" (at 99.06 314.96 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "RTL8367S" (at 99.06 317.5 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_QFP:LQFP-128_14x14mm_P0.4mm" (at 99.06 361.95 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 99.06 364.49 0) (effects (font (size 1.27 1.27)) hide))
+    (instances
+      (project "agentosaurus"
+        (path "/e1000001-0001-4000-8000-000000000001" (reference "U1") (unit 6))
+      )
+    )
+  )
+
+  ;; AVDD33 pins (102-106) — connect to VCC3V3
+  ;; Pin 102: at (99.06+0, 358.14-43.18) = (99.06, 314.96) — top, 270 deg
+  ;; Pin 103: at (99.06+2.54, 314.96) = (101.6, 314.96)
+  ;; Pin 104: at (99.06+5.08, 314.96) = (104.14, 314.96)
+  ;; Pin 105: at (99.06+7.62, 314.96) = (106.68, 314.96)
+  ;; Pin 106: at (99.06-7.62, 314.96) = (91.44, 314.96)
+  ;; All connect at top — tie to VCC3V3 via net label on shared wire
+
+  (net_label "VCC3V3" (at 99.06 312.42 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid e1000030-0120-4000-8000-000000000001))
+  (wire (pts (xy 91.44 314.96) (xy 106.68 314.96))
+    (stroke (width 0) (type default))
+    (uuid e1000040-0070-4000-8000-000000000001)
+  )
+  (wire (pts (xy 99.06 312.42) (xy 99.06 314.96))
+    (stroke (width 0) (type default))
+    (uuid e1000040-0071-4000-8000-000000000001)
+  )
+
+  ;; DVDD33 pins (107-110) — connect to VCC3V3
+  ;; Pin 107: at (86.36, 322.58), Pin 108: (86.36, 325.12), Pin 109: (86.36, 327.66), Pin 110: (86.36, 330.2)
+  (net_label "VCC3V3" (at 83.82 322.58 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0121-4000-8000-000000000001))
+  (wire (pts (xy 83.82 322.58) (xy 86.36 322.58))
+    (stroke (width 0) (type default))
+    (uuid e1000040-0072-4000-8000-000000000001)
+  )
+  (wire (pts (xy 86.36 322.58) (xy 86.36 330.2))
+    (stroke (width 0) (type default))
+    (uuid e1000040-0073-4000-8000-000000000001)
+  )
+
+  ;; DVDD11 pins (111-115) — connect to DVDD11 net
+  ;; Pin 111: (86.36, 335.28), Pin 112: (86.36, 337.82), Pin 113: (86.36, 340.36), Pin 114: (86.36, 342.9), Pin 115: (86.36, 345.44)
+  (net_label "DVDD11" (at 83.82 335.28 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid e1000030-0122-4000-8000-000000000001))
+  (wire (pts (xy 83.82 335.28) (xy 86.36 335.28))
+    (stroke (width 0) (type default))
+    (uuid e1000040-0074-4000-8000-000000000001)
+  )
+  (wire (pts (xy 86.36 335.28) (xy 86.36 345.44))
+    (stroke (width 0) (type default))
+    (uuid e1000040-0075-4000-8000-000000000001)
+  )
+
+  ;; AGND pins (116-120) — connect to GND at bottom
+  ;; Pin 116: (99.06, 401.32), Pin 117: (101.6, 401.32), Pin 118: (104.14, 401.32), Pin 119: (106.68, 401.32), Pin 120: (91.44, 401.32)
+  (symbol (lib_id "power:GND") (at 99.06 403.86 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid e1000020-0060-4000-8000-000000000001)
+    (property "Reference" "#PWR060" (at 99.06 410.21 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 99.06 407.67 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 99.06 403.86 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 99.06 403.86 0) (effects (font (size 1.27 1.27)) hide))
+    (instances (project "agentosaurus" (path "/e1000001-0001-4000-8000-000000000001" (reference "#PWR060") (unit 1))))
+  )
+  (wire (pts (xy 91.44 401.32) (xy 106.68 401.32))
+    (stroke (width 0) (type default))
+    (uuid e1000040-0076-4000-8000-000000000001)
+  )
+  (wire (pts (xy 99.06 401.32) (xy 99.06 403.86))
+    (stroke (width 0) (type default))
+    (uuid e1000040-0077-4000-8000-000000000001)
+  )
+
+  ;; DGND pins (121-122) at bottom: (93.98, 401.32), (96.52, 401.32) — already connected by AGND wire above
+  ;; DGND pins (123-128) at left side: (86.36, 363.22) through (86.36, 375.92)
+  (symbol (lib_id "power:GND") (at 83.82 369.57 270) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid e1000020-0061-4000-8000-000000000001)
+    (property "Reference" "#PWR061" (at 77.47 369.57 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 79.76 369.57 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 83.82 369.57 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 83.82 369.57 0) (effects (font (size 1.27 1.27)) hide))
+    (instances (project "agentosaurus" (path "/e1000001-0001-4000-8000-000000000001" (reference "#PWR061") (unit 1))))
+  )
+  (wire (pts (xy 83.82 369.57) (xy 86.36 369.57))
+    (stroke (width 0) (type default))
+    (uuid e1000040-0078-4000-8000-000000000001)
+  )
+  (wire (pts (xy 86.36 363.22) (xy 86.36 375.92))
+    (stroke (width 0) (type default))
+    (uuid e1000040-0079-4000-8000-000000000001)
   )
 
   (sheet_instances
