@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "server",
+  "dolt_database": "scalenode_cm4_baseboard",
+  "project_id": "cf9d08dc-22d6-49c5-a773-bc77b4d88e31"
+}
