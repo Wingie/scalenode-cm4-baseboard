@@ -987,6 +987,69 @@
   )
 
   ;; ===============================================================
+  ;; CLKREQ# and PEWAKE# Pull-Up Resistors (10k to VCC3V3)
+  ;; ===============================================================
+
+  (text "M.2 PCIe Pull-Ups" (at 63.5 229.0 0)
+    (effects (font (size 1.27 1.27) bold) (justify left bottom))
+    (uuid c1000060-0015-4000-8000-000000000001)
+  )
+
+  ;; R1 — 10k pull-up on CLKREQ# (J3 pin 12, right side at 53.34, 241.3)
+  ;; Wire from J3 pin 12 to resistor
+  (wire (pts (xy 53.34 241.3) (xy 63.5 241.3))
+    (stroke (width 0) (type default))
+    (uuid c1000040-0050-4000-8000-000000000001)
+  )
+  ;; R1 at (63.5, 237.49) — pin 2 bottom at 241.3, pin 1 top at 233.68
+  (symbol (lib_id "Device:R") (at 63.5 237.49 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid c1000100-0001-4000-8000-000000000001)
+    (property "Reference" "R1" (at 66.04 237.49 0) (effects (font (size 1.27 1.27)) (justify left)))
+    (property "Value" "10k" (at 66.04 239.49 0) (effects (font (size 1.27 1.27)) (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 65.278 237.49 90) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 63.5 237.49 0) (effects (font (size 1.27 1.27)) hide))
+    (instances (project "agentosaurus" (path "/c1000001-0001-4000-8000-000000000001" (reference "R1") (unit 1))))
+  )
+  ;; VCC3V3 power symbol for R1 top
+  (symbol (lib_id "power:VCC3V3") (at 63.5 233.68 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid c1000020-0027-4000-8000-000000000001)
+    (property "Reference" "#PWR027" (at 63.5 237.49 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "VCC3V3" (at 63.5 231.14 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 63.5 233.68 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 63.5 233.68 0) (effects (font (size 1.27 1.27)) hide))
+    (instances (project "agentosaurus" (path "/c1000001-0001-4000-8000-000000000001" (reference "#PWR027") (unit 1))))
+  )
+
+  ;; R2 — 10k pull-up on PEWAKE# (J3 pin 19, left side at 22.86, 231.14)
+  ;; Wire from J3 pin 19 to resistor
+  (wire (pts (xy 22.86 231.14) (xy 12.7 231.14))
+    (stroke (width 0) (type default))
+    (uuid c1000040-0051-4000-8000-000000000001)
+  )
+  ;; R2 at (12.7, 227.33) — pin 2 bottom at 231.14, pin 1 top at 223.52
+  (symbol (lib_id "Device:R") (at 12.7 227.33 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid c1000100-0002-4000-8000-000000000001)
+    (property "Reference" "R2" (at 15.24 227.33 0) (effects (font (size 1.27 1.27)) (justify left)))
+    (property "Value" "10k" (at 15.24 229.33 0) (effects (font (size 1.27 1.27)) (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 14.478 227.33 90) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 12.7 227.33 0) (effects (font (size 1.27 1.27)) hide))
+    (instances (project "agentosaurus" (path "/c1000001-0001-4000-8000-000000000001" (reference "R2") (unit 1))))
+  )
+  ;; VCC3V3 power symbol for R2 top
+  (symbol (lib_id "power:VCC3V3") (at 12.7 223.52 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid c1000020-0028-4000-8000-000000000001)
+    (property "Reference" "#PWR028" (at 12.7 227.33 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "VCC3V3" (at 12.7 220.98 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 12.7 223.52 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 12.7 223.52 0) (effects (font (size 1.27 1.27)) hide))
+    (instances (project "agentosaurus" (path "/c1000001-0001-4000-8000-000000000001" (reference "#PWR028") (unit 1))))
+  )
+
+  ;; ===============================================================
   ;; MicroSD Card Slot — J4 (placed)
   ;; ===============================================================
 
